@@ -201,7 +201,1487 @@
              <input type="reset" value="reset">
           </td>
       </tr>
-    </table>
+    </table>:root {
+  --color-primary: #cc00ff;
+  --color-white: hsl(272, 27%, 43%);
+  --color-black: #c3acd6;
+  --color-black-1: #dadada;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  background-image: url(./bg.jpg);
+  background-position: center;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(115, 48, 117, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #99629e;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: rgb(120, 91, 139);
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #8a4cc4;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #621b9c;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.button {
+  border-radius: 4px;
+  background-color: #0a133b;
+  border: none;
+  color: #bf6ff5;
+  text-align: center;
+  font-size: 25px;
+  padding: 15px;
+  width: 150px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(131, 22, 141);
+  background: rgba(216, 77, 221, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 92%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+html {
+  font-family: "Montserrat", Arial, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: #c74bb6;
+}
+
+button {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input,
+select,
+textarea {
+  color: #55364e;
+  font: inherit;
+  margin: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+#container {
+  border: solid 3px #61229b;
+  max-width: 768px;
+  margin: 60px auto;
+  position: relative;
+}
+
+form {
+  padding: 0px;
+  margin: 20px;
+}
+
+h1 {
+  color: #441058;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.underline {
+  border-bottom: solid 2px #cf79c8;
+  margin: -0.512em auto;
+  width: 80px;
+}
+
+.icon_wrapper {
+  margin: 50px auto 0;
+  width: 100%;
+}
+
+.icon {
+  display: block;
+  fill: #947c99;
+  height: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+.email {
+  float: right;
+  width: 45%;
+}
+
+input[type="text"],
+[type="email"],
+select,
+textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #ab7fb4;
+  color: #c94dce;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+input[type="text"]:focus,
+[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+
+.message {
+  float: none;
+}
+
+.name {
+  float: left;
+  width: 45%;
+}
+
+select {
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png")
+    no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.subject {
+  width: 100%;
+}
+
+.telephone {
+  width: 100%;
+}
+
+textarea {
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  color: #b63ca6;
+}
+
+:-moz-placeholder {
+  color: #8d4cc2;
+  opacity: 1;
+}
+
+::-moz-placeholder {
+  color: #a31a8c;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #7841a5;
+}
+
+#form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica", Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+#form_button:hover {
+  background: #6b0e54;
+  color: #f2f3eb;
+}
+
+@media screen and (max-width: 768px) {
+  #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  .underline {
+    width: 68px;
+  }
+
+  #form_button {
+    padding: 15px 25px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  h1 {
+    font-size: 18px;
+  }
+
+  .icon {
+    height: 35px;
+    width: 35px;
+  }
+
+  .underline {
+    width: 53px;
+  }
+
+  input[type="text"],
+  [type="email"],
+  select,
+  textarea {
+    font-size: 0.875em;
+  }
+}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modul 3</title>
+    <style type="text/css">
+        body {
+    background: rgb(112, 45, 101);
+background: linear-gradient(90deg, rgb(194, 145, 186) 24%, rgb(139, 70, 158) 100%);
+    font-family: cambria;
+}
+</style>
+    <link rel="stylesheet" href="css modul 1.css">
+    
+
+
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Logo Perpustakaan">
+                </a>
+            </div>
+            <div class="library-name">
+                <h1>Perpustakaan Everythiing</h1>
+            </div>
+            <nav class="main-navigation">
+                <ul>
+                    <li><a href="bismillah fix.html">Beranda</a></li>
+                    <li class="dropdown">
+                        <a href="MODUL 3.html" class="avtive">Modul 7</a>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Modul Lain</a>
+                        <div class="dropdown-content">
+                            <a href="MODUL 1.html">Modul 1</a>
+                            <a href="Modul 2 (formulir).html">Modul 2</a>
+                            <a href="MODUL 3.html">Modul 3</a>
+                            <a href="MODUL 4.html">Modul 4</a>
+                            <a href="js.html">Modul 5</a>
+                            <a href="MODUL 6.html">Modul 6</a>
+                            <a href="MODUL 8.html">Modul 8</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="bookfair.html">Pameran Buku</a>
+                    </li>
+                    <li><a href="biodata.html">Tentang Saya</a></li>
+                </ul>
+            </nav>
+            <a href="javascript:history.back()" class="back-button">Kembali</a>
+        </div>
+    </header>
+    <h1>Operasi 2 Bilangan</h1>
+    <form action="result.html" method="GET" onsubmit="return handleFormSubmit()">
+        <label for="num1">Bilangan Pertama:</label>
+        <input type="number" id="num1" name="num1" required><br><br>
+        
+        <label for="num2">Bilangan Kedua:</label>
+        <input type="number" id="num2" name="num2" required><br><br>
+        
+        <label for="operation">Operasi:</label>
+        <select id="operation" name="operation" required>
+            <option value="add">Tambah</option>
+            <option value="subtract">Kurang</option>
+            <option value="multiply">Kali</option>
+            <option value="divide">Bagi</option>
+        </select><br><br>
+        
+        <button type="submit">Hitung</button>
+    </form>
+
+    <script>
+        function handleFormSubmit() {
+            const num1 = document.getElementById('num1').value;
+            const num2 = document.getElementById('num2').value;
+            const operation = document.getElementById('operation').value;
+
+            window.location.href = `result.html?num1=${num1}&num2=${num2}&operation=${operation}`;
+            return false;
+        }
+    </script>
+</body>
+<footer>
+    <style>
+        footer {
+            background-color: #7c0e7c;
+            color: #bc9acf;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        footer nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 10px;
+        }
+
+        footer nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        footer nav ul li a {
+            color: #7d53a5;
+            text-decoration: none;
+        }
+
+        footer nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <center>
+    <p>&copy; 2024 Perpustakaan Everythiing. All rights reserved.</p>
+    </center>
+</footer>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>dropdown Menu</title>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <h1 class="logo">EVERYTHIING <span>LIBRARY</span></h1>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li>
+          <a href="#">MODUL<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+            <ul>
+              <li>
+                <a href="#">MODUL 1 <i class="fas fa-caret-right"></i></a>
+                <div class="dropdown-menu-1">
+                  <ul>
+                    <li><a href="modul1.html">Perpustakaan</a></li>
+                    <li><a href="modul 1(2).html">Audio dan Video</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">MODUL 2 <i class="fas fa-caret-right"></i></a>
+                <div class="dropdown-menu-1">
+                  <ul>
+                    <li><a href="modul 2(1).html">Form Pribadi</a></li>
+                    <li><a href="modul 2(2).html">Form Buku</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="modul 3.html">MODUL 3</a></li>
+              <li>
+                <a href="#">MODUL 4<i class="fas fa-caret-right"></i></a>
+                <div class="dropdown-menu-1">
+                  <ul>
+                    <li><a href="tabel border.html">Tabel border</a></li>
+                    <li><a href="form button.html">Form Button</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="modul 5 js.html">MODUL 5</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="BOOKFAIR.html">BOOK FAIR</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        margin-bottom: 16px;
+        padding: 0 8px;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(77, 33, 77, 0.2);
+        margin: 8px;
+      }
+
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #680080;
+        color: rgb(171, 121, 196);
+      }
+
+      .container {
+        padding: 0 16px;
+      }
+
+      .container::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: rgb(190, 68, 180);
+      }
+
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 8px;
+        color: white;
+        background-color: #7e1cac;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .button:hover {
+        background-color: #9956d1;
+      }
+
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="about-section">
+      <h1>About Us Page</h1>
+      <p>Kami adalah tim pustakawan berkualitas tinggi yang siap membantu Anda menemukan informasi yang Anda cari.</p>
+      <p>
+        Bergabunglah dengan kami di perjalanan pengetahuan yang tak terlupakan. Jadilah bagian dari komunitas pembelajar yang terus tumbuh di Perpustakaan Kami!
+      </p>
+    </div>
+<br></br>
+    <h2 style="text-align: center">OUR TEAM</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <img src="IAU (2).jpg" alt="padia" style="width: 100%" />
+          <div class="consultant">
+            <h2>JK ROWLING</h2>
+            <p class="title">CEO & Founder</p>
+            <p>
+              "It is our choices that show what we truly are, far more than our abilities"
+            </p>
+            <p>everythiingaboutowned@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="IAU (1).jpg" alt="fadiyi" style="width: 100%" />
+          <div class="container">
+            <h2>Choso</h2>
+            <p class="title">AUTHOR</p>
+            <p>"It does not do to dwell on dreams and forget to live"</p>
+            <p>everythiingaboutffff@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="IAU (3).jpg" alt="fadiya" style="width: 100%" />
+          <div class="container">
+            <h2>JK ROWLING</h2>
+            <p class="title">Bookholic</p>
+            <p>"Rock bottom became the solid foundation on which I rebuilt my life"</p>
+            <p>everythiingaboutme@gmail.com</p>
+            <p><button class="button">Contact</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Footer Perpustakaan</title>
+        <!-- Tambahkan Font Awesome CSS -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+          integrity="sha512-nR1c4E3x7Vax+p3Q7z4e5fVpkRuknSCwMZYemDAPFEid+FW/tEWT8kGz0FfIQ4l+cMmz6z4LZBj71E8J9a3qKw=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+          }
+
+          footer {
+            background-color: #a68dbb;
+            color: #541a7a;
+            padding: 20px 0;
+            text-align: center;
+          }
+
+          .social-media {
+            list-style-type: none;
+            padding: 0;
+          }
+
+          .social-media li {
+            display: inline-block;
+            margin: 0 10px;
+          }
+
+          .social-media li a {
+            color: #88578f;
+            font-size: 20px;
+            text-decoration: none;
+          }
+        </style>
+      </head>
+      <body>
+        <!-- Konten website di sini -->
+
+        <footer>
+            <ul class="social-media">
+              <li>
+                <a href="ttp://facebook.com/everythiing"><i class="everythiing-fb"></i></a>
+              </li>
+              <li>
+                <a href="https://x.com/everythiing"><i class="everythiing-twt"></i></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/fadiyafadiyi?igsh=dTh5OWk3YTNvMXE2&utm_source=qr"><i class="everythiing-ig"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=lJ-I5QxJBxU"><i class="everythiing-yt"></i></a>
+            </li>
+          </ul>
+          <p>&copy; 2024 made by Everythiing Library.</p>
+        </footer>
+      </body>
+    </html>
+  </body>
+</html>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>PERPUSTAKAAN EVERYTHIING</title>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <h1 class="logo">EVERYTHIING <span>LIBRARY</span></h1>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about us.html">ABOUT</a></li>
+        <li>
+          <a href="#">MODUL<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+            <ul>
+              <li>
+                <a href="#">MODUL 1 <i class="fas fa-caret-right"></i></a>
+                <div class="dropdown-menu-1">
+                  <ul>
+                    <li><a href="modul1.html">Perpustakaan</a></li>
+                    <li><a href="modul 1(2).html">Audio dan Video</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">MODUL 2 <i class="fas fa-caret-right"></i></a>
+                <div class="dropdown-menu-1">
+                  <ul>
+                    <li><a href="modul 2(1).html">Form Pribadi</a></li>
+                    <li><a href="modul 2(2).html">Form Buku</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="modul 3.html">MODUL 3</a></li>
+              <li>
+                <a href="#">MODUL 4<i class="fas fa-caret-right"></i></a>
+                <div class="dropdown-menu-1">
+                  <ul>
+                    <li><a href="tabel border.html">Tabel border</a></li>
+                    <li><a href="form button.html">Form Button</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="modul 5 js.html">MODUL 5</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="BOOKFAIR.html">BOOK FAIR</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </div>
+    <br></br>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      input[type="text"] {
+        width: 130px;
+        box-sizing: border-box;
+        border: 2px solid #9b3dad;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: rgb(218, 157, 203);
+        background-image: url("searchicon.png");
+        background-position: 10px 10px;
+        background-repeat: no-repeat;
+        padding: 12px 20px 12px 40px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+      }
+
+      input[type="text"]:focus {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <p>FIND ME:</p>
+
+    <form>
+      <input type="text" name="search" placeholder="Search.." />
+    </form>
+    <body>
+      <h2 style="text-align: center">COLLECTIONS OF BOOKS</h2>
+    <div class="row">
+      <div class="column">
+        <div class="card">
+            <div class="container">
+              <img src="novel2.jpg" alt="novel 1" class="image" style="width: 100%" />
+              <div class="overlay">Harry Potter dan Batu Bertuah</div>
+            </div>
+            <div class="container">
+          <h2>JK ROWLING</h2>
+            <p class="title">Author</p>
+            <p><b>Sinopsis :</b></p>
+            <p>
+              Seorang anak yatim piatu yang mengetahui bahwa ia adalah penyihir pada ulang tahunnya yang kesebelas
+            <p><a href="https://www.google.co.id/books/edition/Harry_Potter_dan_batu_bertuah/iQmPNDIAskUC?hl=id&gbpv=0&kptab=overview"><button class="button"><span>Preview </span></button></a></p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+              <div class="container">
+                <img src="novel1.jpg" alt="novel 2" class="image" style="width: 100%" />
+                <div class="overlay"><Label>Harry Potter dan Kamar Rahasia</Label></div>
+              </div>
+              <div class="container">
+            <h2>JK ROWLING</h2>
+              <p class="title">Author</p>
+              <p><b>Sinopsis :</b></p>
+              <p>
+                Ketika serangkaian pesan di dinding koridor sekolah memperingatkan bahwa "Kamar Rahasia" telah dibuka
+              <p><a href="https://www.google.co.id/books/edition/Harry_Potter_dan_kamar_rahasia/xVBbEzRjBZoC?hl=id&sa=X&ved=2ahUKEwi_vqmD5tOGAxVXd2wGHe4SDU8QiqUDegQIDRAC"><button class="button"><span>Preview </span></button></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column">
+            <div class="card">
+                <div class="container">
+                  <img src="novel3.jpg" alt="novel 3" class="image" style="width: 100%" />
+                  <div class="overlay"><Label>Harry Potter dan Tawanan Azkaban</Label></div>
+                </div>
+                <div class="container">
+              <h2>JK ROWLING </h2>
+                <p class="title">Author</p>
+                <p><b>Sinopsis :</b></p>
+                <p>
+             
+                  Bersama sahabatnya Ronald Weasley dan Hermione Granger, Harry menyelidiki Sirius Black
+                <p><a href="https://www.google.co.id/books/edition/Harry_Potter_dan_tawanan_Azkaban/VE0LqD085eMC?hl=id&sa=X&ved=2ahUKEwi10Oe-5tOGAxWgUWwGHWVADRwQiqUDegQICRAG"><button class="button"><span>Preview </span></button></a></p>
+              </div>
+            </div>
+          </div>
+          <h2>.</h2>
+            <div class="column">
+              <div class="card">
+                  <div class="container">
+                    <img src="novel4.jpg" alt="novel 4" class="image" style="width: 100%" />
+                    <div class="overlay">Harry Potter dan Piala Api</div>
+                  </div>
+                  <div class="container">
+                <h2>JK ROWLING</h2>
+                  <p class="title">Author</p>
+                  <p><b>Sinopsis :</b></p>
+                  <p>
+                    Seorang penyihir pada tahun keempatnya di Sekolah Sihir Hogwarts
+                  <p><a href="https://www.google.co.id/books/edition/Harry_Potter_dan_piala_api/NAc8p9CXff4C?hl=id&sa=X&ved=2ahUKEwi2gciI59OGAxUxfGwGHeP9A2sQiqUDegQIDxAK"></a><button class="button"><span>Preview </span></button></p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                  <div class="container">
+                    <img src="novel5.jpg" alt="novel 5" class="image" style="width: 100%" />
+                    <div class="overlay">Harry Potter dan Ordo Phoenix</div>
+                  </div>
+                  <div class="container">
+                <h2>JK ROWLING</h2>
+                  <p class="title">Author</p>
+                  <p><b>Sinopsis :</b></p>
+                  <p>
+                    Harry Potter melewati tahun kelimanya di Sekolah Sihir Hogwarts
+                  <p><a href="https://www.google.co.id/books/edition/Harry_Potter_dan_Orde_Phoenix/qCLFw5injs8C?hl=id&sa=X&ved=2ahUKEwj7q4K659OGAxWMUGcHHTV3Bn0QiqUDegQIDxAK"><button class="button"><span>Preview </span></button></a></p>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                  <div class="container">
+                    <img src="novel6.jpg" alt="novel 6" class="image" style="width: 100%" />
+                    <div class="overlay">Harry Potter dan Pangeran Berdarah-Campuran</div>
+                  </div>
+                  <div class="container">
+                <h2>JK ROWLING </h2>
+                  <p class="title">Author</p>
+                  <p><b>Sinopsis :</b></p>
+                  <p>
+                    Mengisahkan pengalaman Harry Potter pada tahun keenamnya
+                  <p><a href="https://www.google.co.id/books/edition/Harry_Potter_dan_pangeran_berdarah_campu/k7Ksb1OWfCMC?hl=id&sa=X&ved=2ahUKEwjhoO2b6NOGAxWRT2wGHV2jC3EQiqUDegQIAxAO"><button class="button"><span>Preview </span></button></a></p>
+                </div>
+              </div>
+            </div>
+          </body>
+          </html>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <html lang="en">
+            <head>
+              <meta charset="UTF-8" />
+              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+              <title>Footer Perpustakaan</title>
+              <!-- Tambahkan Font Awesome CSS -->
+              <link
+                rel="stylesheet"
+                href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+                integrity="sha512-nR1c4E3x7Vax+p3Q7z4e5fVpkRuknSCwMZYemDAPFEid+FW/tEWT8kGz0FfIQ4l+cMmz6z4LZBj71E8J9a3qKw=="
+                crossorigin="anonymous"
+                referrerpolicy="no-referrer"
+              />
+              <style>
+                body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+                }
+      
+                footer {
+                  background-color: #832ca5;
+                  color: #ab65b9;
+                  padding: 20px 0;
+                  text-align: center;
+                }
+      
+                .social-media {
+                  list-style-type: none;
+                  padding: 0;
+                }
+      
+                .social-media li {
+                  display: inline-block;
+                  margin: 0 10px;
+                }
+      
+                .social-media li a {
+                  color: #99719c;
+                  font-size: 20px;
+                  text-decoration: none;
+                }
+              </style>
+            </head>
+            <body>
+              <!-- Konten website di sini -->
+      
+              <footer>
+                  <ul class="social-media">
+                    <li>
+                      <a href="http://facebook.com/everythiing"><i class="everythiing-fb"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://x.com/everythiing"><i class="everythiing-twt"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/fadiyafadiyi?igsh=dTh5OWk3YTNvMXE2&utm_source=qr"><i class="everythiing-ig"></i></a>
+                    </li>
+                    <li>
+                      <a href="https://www.youtube.com/watch?v=lJ-I5QxJBxU"><i class="everythiing-yt"></i></a>
+                  </li>
+                </ul>
+                <p>&copy; 2024 made by EVERYTHIING Library.</p>
+              </footer>
+            </body>
+          </html>
+      <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>PERPUSTAKAAN EVERYTHIING</title>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <h1 class="logo">EVERYTHIING <span>LIBRARY</span></h1>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about us.html">ABOUT</a></li>
+        <li>
+          <a href="#">MODUL<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+            <ul>
+              <li>
+                <a href="#">MODUL 1 <i class="fas fa-caret-right"></i></a>
+                <div class="dropdown-menu-1">
+                  <ul>
+                    <li><a href="modul1.html">Perpustakaan</a></li>
+                    <li><a href="modul 1(2).html">Audio dan Video</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a href="#">MODUL 2 <i class="fas fa-caret-right"></i></a>
+                <div class="dropdown-menu-1">
+                  <ul>
+                    <li><a href="modul 2(1).html">Form Pribadi</a></li>
+                    <li><a href="modul 2(2).html">Form Buku</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="modul 3.html">MODUL 3</a></li>
+              <li>
+                <a href="#">MODUL 4<i class="fas fa-caret-right"></i></a>
+                <div class="dropdown-menu-1">
+                  <ul>
+                    <li><a href="tabel border.html">Tabel border</a></li>
+                    <li><a href="form button.html">Form Button</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="modul 5 js.html">MODUL 5</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="BOOKFAIR.html">BOOK FAIR</a></li>
+        <li><a href="contact us.html">CONTACT US</a></li>
+      </ul>
+    </div>
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script>
+          $(document).ready(function () {
+            $("#flip").click(function () {
+              $("#panel").slideToggle("slow");
+            });
+          });
+        </script>
+        <style>
+          #panel,
+          #flip {
+            padding: 20px;
+            text-align: center;
+            background-color: #e0c5d8;
+            border: solid 10px #c872f0;
+          }
+
+          #panel {
+            padding: 45px;
+            display: none;
+          }
+        </style>
+      </head>
+      <body>
+        <div id="flip">
+          Silahkan baca buku panduan terlebih dahulu :) Hubungi Narahubung dibawah bila ada kendala!
+        </div>
+        <div id="panel">
+          Salam hangat dari tim kami! Kami sangat menghargai setiap pertanyaan, masukan, 
+          atau permintaan informasi dari Anda, pelanggan dan mitra kami. Jangan ragu untuk menghubungi kami melalui opsi komunikasi yang tersedia di bawah ini. 
+          Kami berkomitmen untuk merespons setiap pesan dengan cepat dan efisien
+        </div>
+        <div id="container">
+          <h1>&bull; Keep in Touch &bull;</h1>
+          <div class="underline"></div>
+          <div class="icon_wrapper">
+            <svg class="icon" viewBox="0 0 145.192 145.192">
+              <path
+                d="M126.82,32.694c-2.804,0-5.08,2.273-5.08,5.075v2.721c-1.462,0-2.646,1.185-2.646,2.647v1.995    c0,1.585,1.286,2.873,2.874,2.873h20.577c1.462,0,2.646-1.185,2.646-2.647v-3.041c0-1.009-0.816-1.825-1.823-1.825v-2.722    c0-2.802-2.276-5.075-5.079-5.075h-1.985v-3.829c0-3.816-3.095-6.912-6.913-6.912h-0.589h-20.45c0-2.67-2.164-4.835-4.833-4.835    H56.843c-2.67,0-4.835,2.165-4.835,4.835H34.356v-3.384h-9.563v3.384v1.178h-7.061v1.416c-2.67,0.27-10.17,1.424-13.882,5.972    c-1.773,2.17-2.44,4.791-1.983,7.793c0.463,3.043,1.271,6.346,2.128,9.841c2.354,9.616,5.024,20.515,0.549,28.077    C2.647,79.44-3.125,90.589,2.201,99.547c4.123,6.935,13.701,10.44,28.5,10.44c1.186,0,2.405-0.023,3.658-0.068v9.028h-0.296    c-2.516,0-4.558,2.039-4.558,4.558v4.566h100.04v-4.564c0-2.519-2.039-4.558-4.558-4.558h-0.297V84.631h0.297    c2.519,0,4.558-2.037,4.558-4.556v-0.009c0-2.516-2.039-4.556-4.556-4.556l-36.786-0.009V61.973c0-2.193-1.777-3.971-3.972-3.971    v-4.711h0.456c1.629,0,2.952-1.32,2.952-2.949h14.227V34.459h1.658c2.672,0,4.834-2.165,4.834-4.834h20.45v3.069H126.82z     M34.06,75.511c-2.518,0-4.558,2.04-4.558,4.556v0.009c0,2.519,2.042,4.556,4.558,4.556h0.296v24.12l-0.042-1.168    c-15.994,0.574-26.122-2.523-30.106-9.229C-0.464,90.5,4.822,80.347,6.55,77.423c4.964-8.382,2.173-19.774-0.29-29.825    c-0.843-3.442-1.639-6.696-2.088-9.638c-0.354-2.35,0.129-4.3,1.484-5.958c3.029-3.714,9.509-4.805,12.076-5.1v1.233h7.061v1.49    v2.684c-2.403,1.114-4.153,2.997-4.676,5.237H18.15c-0.584,0-1.056,0.474-1.056,1.056v0.83c0,0.584,0.475,1.056,1.056,1.056h1.984    c0.561,2.18,2.304,3.999,4.658,5.092v0.029c0,0-2.282,20.823,16.479,22.099v1.102c0,1.177,0.955,2.133,2.133,2.133h3.297    c1.178,0,2.133-0.956,2.133-2.133V50.135c0-1.177-0.955-2.132-2.133-2.132h-3.297c-1.178,0-2.133,0.955-2.133,2.132    c-1.575-0.235-5.532-1.17-6.635-4.547c2.36-1.092,4.109-2.913,4.669-5.097h1.308c0.722,0,1.309-0.584,1.309-1.308v-0.578    c0-0.584-0.475-1.056-1.056-1.056h-1.539c-0.542-2.332-2.416-4.271-4.968-5.363v-2.559h17.651c0,2.67,2.166,4.835,4.836,4.835 h2.392v15.88h13.639c0,1.629,1.321,2.949,2.951,2.949h0.899v4.711c-2.194,0-3.972,1.778-3.972,3.971v13.529L34.06,75.511z     M95.188,101.78c0,8.655-7.012,15.665-15.664,15.665c-8.653,0-15.667-7.01-15.667-15.665c0-8.647,7.014-15.664,15.667-15.664    C88.177,86.116,95.188,93.132,95.188,101.78z M97.189,45.669h-9.556c0-0.896-0.726-1.62-1.619-1.62H74.494    c-0.896,0-1.621,0.727-1.621,1.62h-8.967v-11.21h33.283V45.669z"
+              ></path>
+              <path
+                d="M70.865,101.78c0,4.774,3.886,8.657,8.66,8.657c4.774,0,8.657-3.883,8.657-8.657c0-4.773-3.883-8.656-8.657-8.656    C74.751,93.124,70.865,97.006,70.865,101.78z"
+              ></path>
+            </svg>
+          </div>
+          <form action="#" method="post" id="contact_form">
+            <div class="name">
+              <label for="name"></label>
+              <input
+                type="text"
+                placeholder="nama"
+                name="name"
+                id="name_input"
+                required
+              />
+            </div>
+            <div class="email">
+              <label for="email"></label>
+              <input
+                type="email"
+                placeholder="email"
+                name="email"
+                id="email_input"
+                required
+              />
+            </div>
+            <div class="telephone">
+              <label for="name"></label>
+              <input
+                type="text"
+                placeholder="no.telp"
+                name="telephone"
+                id="telephone_input"
+                required
+              />
+            </div>
+            <div class="subject">
+              <label for="subject"></label>
+              <select
+                placeholder="Subject line"
+                name="subject"
+                id="subject_input"
+                required
+              >
+                <option disabled hidden selected>Apa permasalahanmu?</option>
+                <option>aku ingin memulai suatu project</option>
+                <option>aku ingin bertanya</option>
+                <option>
+                  aku ingin berkomentar mengenai desain websitenya
+                </option>
+              </select>
+            </div>
+            <div class="message">
+              <label for="message"></label>
+              <textarea
+                name="message"
+                placeholder="komentar/pendapatmu"
+                id="message_input"
+                cols="30"
+                rows="5"
+                required
+              ></textarea>
+            </div>
+            <div class="submit">
+              <input type="submit" value="kirim pesan" id="form_button" />
+            </div>
+          </form>
+          <!-- // End form -->
+        </div>
+        <!-- // End #container -->
+        <!DOCTYPE html>
+        <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>Footer Perpustakaan</title>
+            <!-- Tambahkan Font Awesome CSS -->
+            <link
+              rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+              integrity="sha512-nR1c4E3x7Vax+p3Q7z4e5fVpkRuknSCwMZYemDAPFEid+FW/tEWT8kGz0FfIQ4l+cMmz6z4LZBj71E8J9a3qKw=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer"
+            />
+            <style>
+              body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+              }
+    
+              footer {
+                background-color: #9347c5;
+                color: #dac6d6;
+                padding: 20px 0;
+                text-align: center;
+              }
+    
+              .social-media {
+                list-style-type: none;
+                padding: 0;
+              }
+    
+              .social-media li {
+                display: inline-block;
+                margin: 0 10px;
+              }
+    
+              .social-media li a {
+                color: #694462;
+                font-size: 20px;
+                text-decoration: none;
+              }
+            </style>
+          </head>
+          <body>
+            <!-- Konten website di sini -->
+    
+            <footer>
+              <ul class="social-media">
+                <li>
+                  <a href="http://facebook.com/everythiing"><i class="everythiing-fb"></i></a>
+                </li>
+                <li>
+                  <a href="https://x.com/everythiing"><i class="everythiing-twt"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/fadiyafadiyi?igsh=dTh5OWk3YTNvMXE2&utm_source=q"><i class="everythiing-ig"></i></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/watch?v=lJ-I5QxJBxU"><i class="everythiing-yt"></i></a>
+                </li>
+              </ul>
+              <p>&copy; 2024 made by Everythiing Library.</p>
+      </body>
+    </html>
+  </body>
+</html>
+*{
+	margin: 0;
+	pad: 0;
+	outline: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+body{
+	height: 100vh;
+	background-image: url(background.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.container{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	padding: 20px 25px;
+	width: 300px;
+
+	background-color: rgba(219, 168, 204, 0.7);
+	box-shadow: 0 0 10px rgba(36, 25, 37, 0.3);
+}
+.container h1{
+	text-align: left;
+	color: #9168a8;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	border-bottom: 4px solid #642183;
+}
+.container label{
+	text-align: left;
+	color: #2f1836;
+}
+.container form input{
+	width: calc(100% - 20px);
+	padding: 8px 10px;
+	margin-bottom: 15px;
+	border: none;
+	background-color: transparent;
+	border-bottom: 2px solid #4b0092;
+	color: #fff;
+	font-size: 20px;
+}
+.container form button{
+	width: 100%;
+	padding: 5px 0;
+	border: none;
+	background-color: #aa6dc7;
+	font-size: 18px;
+	color: #fafafa;
+}<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="Login.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Login</h1>
+		<form>
+			<label>Username</label><br>
+			<input type="text"><br>
+			<label>Password</label><br>
+			<input type="Password"><br>
+			<a href="BOOKFAIR.html" target="_blank"><button>Log In</button></a>
+		</form>
+	</div>
+</body>
+</html>
       </p>
 </fieldset>
 </body>
